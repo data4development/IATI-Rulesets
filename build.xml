@@ -29,9 +29,9 @@
   </target>
   
   <target name="test" description="Run the tests">
-    <xmlvalidate lenient="true">
+<!--    <xmlvalidate lenient="true">
       <fileset dir="tests/iati/testfiles" includes="*.xml"/>
-    </xmlvalidate>
+    </xmlvalidate>-->
     <antcall target="xspec.xspec" inheritall="false">
       <param name="xspec.xml" location="tests/iati.xspec"/>
     </antcall>
