@@ -34,6 +34,9 @@
    <code status="withdrawn">BE-GTCF</code>
    <code status="active">BG-EIK</code>
    <code status="active">BJ-IFU</code>
+   <code status="active">BO-CINS</code>
+   <code status="active">BO-NIT</code>
+   <code status="active">BR-CNPJ</code>
    <code status="active">BW-CIPA</code>
    <code status="active">BW-TIN</code>
    <code status="active">BY-ADR</code>
@@ -56,6 +59,7 @@
    <code status="active">CH-FDJP</code>
    <code status="active">CL-RUT</code>
    <code status="active">CN-SAIC</code>
+   <code status="active">CN-USCI</code>
    <code status="active">CO-CCB</code>
    <code status="active">CO-RUE</code>
    <code status="active">CR-RPJ</code>
@@ -129,6 +133,7 @@
    <code status="active">IT-CF</code>
    <code status="withdrawn">IT-RI</code>
    <code status="active">JE-FSC</code>
+   <code status="active">JE-JCR</code>
    <code status="withdrawn">JE-OAC</code>
    <code status="active">JO-CCD</code>
    <code status="active">JO-MSD</code>
@@ -228,6 +233,7 @@
    <code status="active">XI-IATI</code>
    <code status="active">XI-PB</code>
    <code status="active">XI-PID</code>
+   <code status="active">XI-ROR</code>
    <code status="active">XI-WIKIDATA</code>
    <code status="active">XM-DAC</code>
    <code status="active">XM-OCHA</code>
