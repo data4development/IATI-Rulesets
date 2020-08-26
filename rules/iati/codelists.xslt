@@ -9,11 +9,8 @@
       <xsl:param name="iati-version" tunnel="yes"/>
       <xsl:if test="me:codeListFail(., 'Version', $iati-version)">
          <me:feedback type="danger" class="iati" id="9.1.1">
-            <me:src ref="iati"
-                    versions="any"
-                    href="{me:iati-url('codelists/Version/')}"/>
+            <me:src ref="iati" versions="any"/>
             <me:message>The IATI version of the dataset is not a valid version number.</me:message>
-            <me:diagnostic>For value {.}</me:diagnostic>
          </me:feedback>
       </xsl:if>
       <xsl:next-match/>
@@ -24,11 +21,8 @@
       <xsl:param name="iati-version" tunnel="yes"/>
       <xsl:if test="me:codeListFail(., 'BudgetNotProvided', $iati-version)">
          <me:feedback type="danger" class="financial" id="9.2.1">
-            <me:src ref="iati"
-                    versions="any"
-                    href="{me:iati-url('codelists/BudgetNotProvided/')}"/>
+            <me:src ref="iati" versions="any"/>
             <me:message>The code to indicate why no budget is provided is invalid.</me:message>
-            <me:diagnostic>For value {.}</me:diagnostic>
          </me:feedback>
       </xsl:if>
       <xsl:next-match/>
@@ -39,11 +33,8 @@
       <xsl:param name="iati-version" tunnel="yes"/>
       <xsl:if test="me:codeListFail(., 'Currency', $iati-version)">
          <me:feedback type="danger" class="financial" id="9.3.1">
-            <me:src ref="iati"
-                    versions="any"
-                    href="{me:iati-url('codelists/Currency/')}"/>
+            <me:src ref="iati" versions="any"/>
             <me:message>The default currency code is invalid.</me:message>
-            <me:diagnostic>For value {.}</me:diagnostic>
          </me:feedback>
       </xsl:if>
       <xsl:next-match/>
@@ -54,11 +45,8 @@
       <xsl:param name="iati-version" tunnel="yes"/>
       <xsl:if test="me:codeListFail(., 'ActivityDateType', $iati-version)">
          <me:feedback type="danger" class="information" id="9.4.1">
-            <me:src ref="iati"
-                    versions="any"
-                    href="{me:iati-url('codelists/ActivityDateType/')}"/>
+            <me:src ref="iati" versions="any"/>
             <me:message>The activity date type is invalid.</me:message>
-            <me:diagnostic>For value {.}</me:diagnostic>
          </me:feedback>
       </xsl:if>
       <xsl:next-match/>
@@ -69,11 +57,8 @@
       <xsl:param name="iati-version" tunnel="yes"/>
       <xsl:if test="me:codeListFail(., 'ActivityStatus', $iati-version)">
          <me:feedback type="danger" class="information" id="9.5.1">
-            <me:src ref="iati"
-                    versions="any"
-                    href="{me:iati-url('codelists/ActivityStatus/')}"/>
+            <me:src ref="iati" versions="any"/>
             <me:message>The activity status code is invalid.</me:message>
-            <me:diagnostic>For value {.}</me:diagnostic>
          </me:feedback>
       </xsl:if>
       <xsl:next-match/>
@@ -84,11 +69,8 @@
       <xsl:param name="iati-version" tunnel="yes"/>
       <xsl:if test="me:codeListFail(., 'ActivityScope', $iati-version)">
          <me:feedback type="danger" class="information" id="9.6.1">
-            <me:src ref="iati"
-                    versions="any"
-                    href="{me:iati-url('codelists/ActivityScope/')}"/>
+            <me:src ref="iati" versions="any"/>
             <me:message>The activity scope code is invalid.</me:message>
-            <me:diagnostic>For value {.}</me:diagnostic>
          </me:feedback>
       </xsl:if>
       <xsl:next-match/>
@@ -97,11 +79,8 @@
       <xsl:param name="iati-version" tunnel="yes"/>
       <xsl:if test="me:codeListFail(., 'BudgetStatus', $iati-version)">
          <me:feedback type="danger" class="financial" id="9.7.1">
-            <me:src ref="iati"
-                    versions="any"
-                    href="{me:iati-url('codelists/BudgetStatus/')}"/>
+            <me:src ref="iati" versions="any"/>
             <me:message>The budget status is invalid.</me:message>
-            <me:diagnostic>For value {.}</me:diagnostic>
          </me:feedback>
       </xsl:if>
       <xsl:next-match/>
@@ -110,11 +89,8 @@
       <xsl:param name="iati-version" tunnel="yes"/>
       <xsl:if test="me:codeListFail(., 'BudgetType', $iati-version)">
          <me:feedback type="danger" class="financial" id="9.8.1">
-            <me:src ref="iati"
-                    versions="any"
-                    href="{me:iati-url('codelists/BudgetType/')}"/>
+            <me:src ref="iati" versions="any"/>
             <me:message>The budget type is invalid.</me:message>
-            <me:diagnostic>For value {.}</me:diagnostic>
          </me:feedback>
       </xsl:if>
       <xsl:next-match/>
@@ -125,11 +101,8 @@
       <xsl:param name="iati-version" tunnel="yes"/>
       <xsl:if test="me:codeListFail(., 'Currency', $iati-version)">
          <me:feedback type="danger" class="financial" id="9.9.1">
-            <me:src ref="iati"
-                    versions="any"
-                    href="{me:iati-url('codelists/Currency/')}"/>
+            <me:src ref="iati" versions="any"/>
             <me:message>The currency code is invalid.</me:message>
-            <me:diagnostic>For value {.}</me:diagnostic>
          </me:feedback>
       </xsl:if>
       <xsl:next-match/>
@@ -140,11 +113,8 @@
       <xsl:param name="iati-version" tunnel="yes"/>
       <xsl:if test="me:codeListFail(., 'CollaborationType', $iati-version)">
          <me:feedback type="danger" class="classifications" id="9.10.1">
-            <me:src ref="iati"
-                    versions="any"
-                    href="{me:iati-url('codelists/CollaborationType/')}"/>
+            <me:src ref="iati" versions="any"/>
             <me:message>The collaboration type is invalid.</me:message>
-            <me:diagnostic>For value {.}</me:diagnostic>
          </me:feedback>
       </xsl:if>
       <xsl:next-match/>
@@ -155,11 +125,8 @@
       <xsl:param name="iati-version" tunnel="yes"/>
       <xsl:if test="me:codeListFail(., 'ConditionType', $iati-version)">
          <me:feedback type="danger" class="performance" id="9.11.1">
-            <me:src ref="iati"
-                    versions="any"
-                    href="{me:iati-url('codelists/ConditionType/')}"/>
+            <me:src ref="iati" versions="any"/>
             <me:message>The condition type is invalid.</me:message>
-            <me:diagnostic>For value {.}</me:diagnostic>
          </me:feedback>
       </xsl:if>
       <xsl:next-match/>
@@ -170,11 +137,8 @@
       <xsl:param name="iati-version" tunnel="yes"/>
       <xsl:if test="me:codeListFail(., 'ContactType', $iati-version)">
          <me:feedback type="danger" class="information" id="9.12.1">
-            <me:src ref="iati"
-                    versions="any"
-                    href="{me:iati-url('codelists/ContactType/')}"/>
+            <me:src ref="iati" versions="any"/>
             <me:message>The contact information type is invalid.</me:message>
-            <me:diagnostic>For value {.}</me:diagnostic>
          </me:feedback>
       </xsl:if>
       <xsl:next-match/>
@@ -185,11 +149,8 @@
       <xsl:param name="iati-version" tunnel="yes"/>
       <xsl:if test="me:codeListFail(., 'BudgetIdentifierVocabulary', $iati-version)">
          <me:feedback type="danger" class="classifications" id="9.13.1">
-            <me:src ref="iati"
-                    versions="any"
-                    href="{me:iati-url('codelists/BudgetIdentifierVocabulary/')}"/>
+            <me:src ref="iati" versions="any"/>
             <me:message>The country budget identifier vocabulary is invalid.</me:message>
-            <me:diagnostic>For value {.}</me:diagnostic>
          </me:feedback>
       </xsl:if>
       <xsl:next-match/>
@@ -201,11 +162,8 @@
       <!-- Hack: added test for IATI v2.03: it should not do a codelist check, non-embedded codelist removed -->
       <xsl:if test="($iati-version != '2.03') and me:codeListFail(., 'BudgetIdentifier', $iati-version)">
          <me:feedback type="danger" class="classifications" id="9.14.1">
-            <me:src ref="iati"
-                    versions="any"
-                    href="{me:iati-url('codelists/BudgetIdentifier/')}"/>
+            <me:src ref="iati" versions="any"/>
             <me:message>The country budget identifier does not exist.</me:message>
-            <me:diagnostic>For value {.}</me:diagnostic>
          </me:feedback>
       </xsl:if>
       <xsl:next-match/>
@@ -216,11 +174,8 @@
       <xsl:param name="iati-version" tunnel="yes"/>
       <xsl:if test="me:codeListFail(., 'DescriptionType', $iati-version)">
          <me:feedback type="danger" class="classifications" id="9.15.1">
-            <me:src ref="iati"
-                    versions="any"
-                    href="{me:iati-url('codelists/DescriptionType/')}"/>
+            <me:src ref="iati" versions="any"/>
             <me:message>The country budget item description type is invalid.</me:message>
-            <me:diagnostic>For value {.}</me:diagnostic>
          </me:feedback>
       </xsl:if>
       <xsl:next-match/>
@@ -231,11 +186,8 @@
       <xsl:param name="iati-version" tunnel="yes"/>
       <xsl:if test="me:codeListFail(., 'CRSChannelCode', $iati-version)">
          <me:feedback type="danger" class="classifications" id="9.16.1">
-            <me:src ref="iati"
-                    versions="any"
-                    href="{me:iati-url('codelists/CRSChannelCode/')}"/>
+            <me:src ref="iati" versions="any"/>
             <me:message>The CRS channel code is invalid.</me:message>
-            <me:diagnostic>For value {.}</me:diagnostic>
          </me:feedback>
       </xsl:if>
       <xsl:next-match/>
@@ -246,11 +198,8 @@
       <xsl:param name="iati-version" tunnel="yes"/>
       <xsl:if test="me:codeListFail(., 'CRSAddOtherFlags', $iati-version)">
          <me:feedback type="danger" class="classifications" id="9.17.1">
-            <me:src ref="iati"
-                    versions="any"
-                    href="{me:iati-url('codelists/CRSAddOtherFlags/')}"/>
+            <me:src ref="iati" versions="any"/>
             <me:message>The CRS other flag code is invalid.</me:message>
-            <me:diagnostic>For value {.}</me:diagnostic>
          </me:feedback>
       </xsl:if>
       <xsl:next-match/>
@@ -261,11 +210,8 @@
       <xsl:param name="iati-version" tunnel="yes"/>
       <xsl:if test="me:codeListFail(., 'Currency', $iati-version)">
          <me:feedback type="danger" class="classifications" id="9.18.1">
-            <me:src ref="iati"
-                    versions="any"
-                    href="{me:iati-url('codelists/Currency/')}"/>
+            <me:src ref="iati" versions="any"/>
             <me:message>The currency code is invalid.</me:message>
-            <me:diagnostic>For value {.}</me:diagnostic>
          </me:feedback>
       </xsl:if>
       <xsl:next-match/>
@@ -276,11 +222,8 @@
       <xsl:param name="iati-version" tunnel="yes"/>
       <xsl:if test="me:codeListFail(., 'LoanRepaymentPeriod', $iati-version)">
          <me:feedback type="danger" class="classifications" id="9.19.1">
-            <me:src ref="iati"
-                    versions="any"
-                    href="{me:iati-url('codelists/LoanRepaymentPeriod/')}"/>
+            <me:src ref="iati" versions="any"/>
             <me:message>The repayment plan code is invalid.</me:message>
-            <me:diagnostic>For value {.}</me:diagnostic>
          </me:feedback>
       </xsl:if>
       <xsl:next-match/>
@@ -291,11 +234,8 @@
       <xsl:param name="iati-version" tunnel="yes"/>
       <xsl:if test="me:codeListFail(., 'LoanRepaymentType', $iati-version)">
          <me:feedback type="danger" class="classifications" id="9.20.1">
-            <me:src ref="iati"
-                    versions="any"
-                    href="{me:iati-url('codelists/LoanRepaymentType/')}"/>
+            <me:src ref="iati" versions="any"/>
             <me:message>The repayment type is invalid.</me:message>
-            <me:diagnostic>For value {.}</me:diagnostic>
          </me:feedback>
       </xsl:if>
       <xsl:next-match/>
@@ -306,11 +246,8 @@
       <xsl:param name="iati-version" tunnel="yes"/>
       <xsl:if test="me:codeListFail(., 'AidType', $iati-version)">
          <me:feedback type="danger" class="classifications" id="9.21.1">
-            <me:src ref="iati"
-                    versions="any"
-                    href="{me:iati-url('codelists/AidType/')}"/>
+            <me:src ref="iati" versions="any"/>
             <me:message>The default aid type is invalid.</me:message>
-            <me:diagnostic>For value {.}</me:diagnostic>
          </me:feedback>
       </xsl:if>
       <xsl:next-match/>
@@ -321,11 +258,8 @@
       <xsl:param name="iati-version" tunnel="yes"/>
       <xsl:if test="me:codeListFail(., 'AidTypeVocabulary', $iati-version)">
          <me:feedback type="danger" class="classifications" id="9.22.1">
-            <me:src ref="iati"
-                    versions="any"
-                    href="{me:iati-url('codelists/AidTypeVocabulary/')}"/>
+            <me:src ref="iati" versions="any"/>
             <me:message>The default aid type vocabulary is invalid.</me:message>
-            <me:diagnostic>For value {.}</me:diagnostic>
          </me:feedback>
       </xsl:if>
       <xsl:next-match/>
@@ -336,11 +270,8 @@
       <xsl:param name="iati-version" tunnel="yes"/>
       <xsl:if test="me:codeListFail(., 'FinanceType', $iati-version)">
          <me:feedback type="danger" class="classifications" id="9.23.1">
-            <me:src ref="iati"
-                    versions="any"
-                    href="{me:iati-url('codelists/FinanceType/')}"/>
+            <me:src ref="iati" versions="any"/>
             <me:message>The default finance type is invalid.</me:message>
-            <me:diagnostic>For value {.}</me:diagnostic>
          </me:feedback>
       </xsl:if>
       <xsl:next-match/>
@@ -351,11 +282,8 @@
       <xsl:param name="iati-version" tunnel="yes"/>
       <xsl:if test="me:codeListFail(., 'FlowType', $iati-version)">
          <me:feedback type="danger" class="classifications" id="9.24.1">
-            <me:src ref="iati"
-                    versions="any"
-                    href="{me:iati-url('codelists/FlowType/')}"/>
+            <me:src ref="iati" versions="any"/>
             <me:message>The default flow type is invalid.</me:message>
-            <me:diagnostic>For value {.}</me:diagnostic>
          </me:feedback>
       </xsl:if>
       <xsl:next-match/>
@@ -366,11 +294,8 @@
       <xsl:param name="iati-version" tunnel="yes"/>
       <xsl:if test="me:codeListFail(., 'TiedStatus', $iati-version)">
          <me:feedback type="danger" class="classifications" id="9.25.1">
-            <me:src ref="iati"
-                    versions="any"
-                    href="{me:iati-url('codelists/TiedStatus/')}"/>
+            <me:src ref="iati" versions="any"/>
             <me:message>The default tied aid status code is invalid.</me:message>
-            <me:diagnostic>For value {.}</me:diagnostic>
          </me:feedback>
       </xsl:if>
       <xsl:next-match/>
@@ -381,11 +306,8 @@
       <xsl:param name="iati-version" tunnel="yes"/>
       <xsl:if test="me:codeListFail(., 'DescriptionType', $iati-version)">
          <me:feedback type="danger" class="information" id="9.26.1">
-            <me:src ref="iati"
-                    versions="any"
-                    href="{me:iati-url('codelists/DescriptionType/')}"/>
+            <me:src ref="iati" versions="any"/>
             <me:message>The description type is invalid.</me:message>
-            <me:diagnostic>For value {.}</me:diagnostic>
          </me:feedback>
       </xsl:if>
       <xsl:next-match/>
@@ -396,11 +318,8 @@
       <xsl:param name="iati-version" tunnel="yes"/>
       <xsl:if test="me:codeListFail(., 'FileFormat', $iati-version)">
          <me:feedback type="danger" class="documents" id="9.27.1">
-            <me:src ref="iati"
-                    versions="any"
-                    href="{me:iati-url('codelists/FileFormat/')}"/>
+            <me:src ref="iati" versions="any"/>
             <me:message>The document format is invalid.</me:message>
-            <me:diagnostic>For value {.}</me:diagnostic>
          </me:feedback>
       </xsl:if>
       <xsl:next-match/>
@@ -411,11 +330,8 @@
       <xsl:param name="iati-version" tunnel="yes"/>
       <xsl:if test="me:codeListFail(., 'DocumentCategory', $iati-version)">
          <me:feedback type="danger" class="documents" id="9.28.1">
-            <me:src ref="iati"
-                    versions="any"
-                    href="{me:iati-url('codelists/DocumentCategory/')}"/>
+            <me:src ref="iati" versions="any"/>
             <me:message>The document category code is invalid.</me:message>
-            <me:diagnostic>For value {.}</me:diagnostic>
          </me:feedback>
       </xsl:if>
       <xsl:next-match/>
@@ -426,11 +342,8 @@
       <xsl:param name="iati-version" tunnel="yes"/>
       <xsl:if test="me:codeListFail(., 'Language', $iati-version)">
          <me:feedback type="danger" class="documents" id="9.29.1">
-            <me:src ref="iati"
-                    versions="any"
-                    href="{me:iati-url('codelists/Language/')}"/>
+            <me:src ref="iati" versions="any"/>
             <me:message>The document language code is invalid.</me:message>
-            <me:diagnostic>For value {.}</me:diagnostic>
          </me:feedback>
       </xsl:if>
       <xsl:next-match/>
@@ -441,11 +354,8 @@
       <xsl:param name="iati-version" tunnel="yes"/>
       <xsl:if test="me:codeListFail(., 'Currency', $iati-version)">
          <me:feedback type="danger" class="financial" id="9.30.1">
-            <me:src ref="iati"
-                    versions="any"
-                    href="{me:iati-url('codelists/Currency/')}"/>
+            <me:src ref="iati" versions="any"/>
             <me:message>The currency code is invalid.</me:message>
-            <me:diagnostic>For value {.}</me:diagnostic>
          </me:feedback>
       </xsl:if>
       <xsl:next-match/>
@@ -456,11 +366,8 @@
       <xsl:param name="iati-version" tunnel="yes"/>
       <xsl:if test="me:codeListFail(., 'HumanitarianScopeType', $iati-version)">
          <me:feedback type="danger" class="classifications" id="9.31.1">
-            <me:src ref="iati"
-                    versions="any"
-                    href="{me:iati-url('codelists/HumanitarianScopeType/')}"/>
+            <me:src ref="iati" versions="any"/>
             <me:message>The humanitarian scope type is invalid.</me:message>
-            <me:diagnostic>For value {.}</me:diagnostic>
          </me:feedback>
       </xsl:if>
       <xsl:next-match/>
@@ -471,11 +378,8 @@
       <xsl:param name="iati-version" tunnel="yes"/>
       <xsl:if test="me:codeListFail(., 'HumanitarianScopeVocabulary', $iati-version)">
          <me:feedback type="danger" class="classifications" id="9.32.1">
-            <me:src ref="iati"
-                    versions="any"
-                    href="{me:iati-url('codelists/HumanitarianScopeVocabulary/')}"/>
+            <me:src ref="iati" versions="any"/>
             <me:message>The humanitarian scope vocabulary is invalid.</me:message>
-            <me:diagnostic>For value {.}</me:diagnostic>
          </me:feedback>
       </xsl:if>
       <xsl:next-match/>
@@ -486,11 +390,8 @@
       <xsl:param name="iati-version" tunnel="yes"/>
       <xsl:if test="me:codeListFail(., 'GeographicVocabulary', $iati-version)">
          <me:feedback type="danger" class="geo" id="9.33.1">
-            <me:src ref="iati"
-                    versions="any"
-                    href="{me:iati-url('codelists/GeographicVocabulary/')}"/>
+            <me:src ref="iati" versions="any"/>
             <me:message>The location's administrative vocabulary is invalid.</me:message>
-            <me:diagnostic>For value {.}</me:diagnostic>
          </me:feedback>
       </xsl:if>
       <xsl:next-match/>
@@ -501,11 +402,8 @@
       <xsl:param name="iati-version" tunnel="yes"/>
       <xsl:if test="me:codeListFail(., 'LocationType', $iati-version)">
          <me:feedback type="danger" class="geo" id="9.34.1">
-            <me:src ref="iati"
-                    versions="any"
-                    href="{me:iati-url('codelists/LocationType/')}"/>
+            <me:src ref="iati" versions="any"/>
             <me:message>The location's feature designation code is invalid.</me:message>
-            <me:diagnostic>For value {.}</me:diagnostic>
          </me:feedback>
       </xsl:if>
       <xsl:next-match/>
@@ -516,11 +414,8 @@
       <xsl:param name="iati-version" tunnel="yes"/>
       <xsl:if test="me:codeListFail(., 'GeographicLocationClass', $iati-version)">
          <me:feedback type="danger" class="geo" id="9.35.1">
-            <me:src ref="iati"
-                    versions="any"
-                    href="{me:iati-url('codelists/GeographicLocationClass/')}"/>
+            <me:src ref="iati" versions="any"/>
             <me:message>The location class code is invalid.</me:message>
-            <me:diagnostic>For value {.}</me:diagnostic>
          </me:feedback>
       </xsl:if>
       <xsl:next-match/>
@@ -531,11 +426,8 @@
       <xsl:param name="iati-version" tunnel="yes"/>
       <xsl:if test="me:codeListFail(., 'GeographicVocabulary', $iati-version)">
          <me:feedback type="danger" class="geo" id="9.36.1">
-            <me:src ref="iati"
-                    versions="any"
-                    href="{me:iati-url('codelists/GeographicVocabulary/')}"/>
+            <me:src ref="iati" versions="any"/>
             <me:message>The location identifier vocabulary is invalid.</me:message>
-            <me:diagnostic>For value {.}</me:diagnostic>
          </me:feedback>
       </xsl:if>
       <xsl:next-match/>
@@ -546,11 +438,8 @@
       <xsl:param name="iati-version" tunnel="yes"/>
       <xsl:if test="me:codeListFail(., 'GeographicLocationReach', $iati-version)">
          <me:feedback type="danger" class="geo" id="9.37.1">
-            <me:src ref="iati"
-                    versions="any"
-                    href="{me:iati-url('codelists/GeographicLocationReach/')}"/>
+            <me:src ref="iati" versions="any"/>
             <me:message>The location reach code is invalid.</me:message>
-            <me:diagnostic>For value {.}</me:diagnostic>
          </me:feedback>
       </xsl:if>
       <xsl:next-match/>
@@ -561,11 +450,8 @@
       <xsl:param name="iati-version" tunnel="yes"/>
       <xsl:if test="me:codeListFail(., 'GeographicExactness', $iati-version)">
          <me:feedback type="danger" class="geo" id="9.38.1">
-            <me:src ref="iati"
-                    versions="any"
-                    href="{me:iati-url('codelists/GeographicExactness/')}"/>
+            <me:src ref="iati" versions="any"/>
             <me:message>The location exactness code is invalid.</me:message>
-            <me:diagnostic>For value {.}</me:diagnostic>
          </me:feedback>
       </xsl:if>
       <xsl:next-match/>
@@ -576,11 +462,8 @@
       <xsl:param name="iati-version" tunnel="yes"/>
       <xsl:if test="me:codeListFail(., 'OtherIdentifierType', $iati-version)">
          <me:feedback type="danger" class="identifiers" id="9.39.1">
-            <me:src ref="iati"
-                    versions="any"
-                    href="{me:iati-url('codelists/OtherIdentifierType/')}"/>
+            <me:src ref="iati" versions="any"/>
             <me:message>The "other identifier" type is invalid.</me:message>
-            <me:diagnostic>For value {.}</me:diagnostic>
          </me:feedback>
       </xsl:if>
       <xsl:next-match/>
@@ -591,11 +474,8 @@
       <xsl:param name="iati-version" tunnel="yes"/>
       <xsl:if test="me:codeListFail(., 'CRSChannelCode', $iati-version)">
          <me:feedback type="danger" class="participating" id="9.40.1">
-            <me:src ref="iati"
-                    versions="any"
-                    href="{me:iati-url('codelists/CRSChannelCode/')}"/>
+            <me:src ref="iati" versions="any"/>
             <me:message>The CRS channel code is invalid.</me:message>
-            <me:diagnostic>For value {.}</me:diagnostic>
          </me:feedback>
       </xsl:if>
       <xsl:next-match/>
@@ -606,11 +486,8 @@
       <xsl:param name="iati-version" tunnel="yes"/>
       <xsl:if test="me:codeListFail(., 'OrganisationRole', $iati-version)">
          <me:feedback type="danger" class="participating" id="9.41.1">
-            <me:src ref="iati"
-                    versions="any"
-                    href="{me:iati-url('codelists/OrganisationRole/')}"/>
+            <me:src ref="iati" versions="any"/>
             <me:message>The organisation role is invalid.</me:message>
-            <me:diagnostic>For value {.}</me:diagnostic>
          </me:feedback>
       </xsl:if>
       <xsl:next-match/>
@@ -621,11 +498,8 @@
       <xsl:param name="iati-version" tunnel="yes"/>
       <xsl:if test="me:codeListFail(., 'OrganisationType', $iati-version)">
          <me:feedback type="danger" class="participating" id="9.42.1">
-            <me:src ref="iati"
-                    versions="any"
-                    href="{me:iati-url('codelists/OrganisationType/')}"/>
+            <me:src ref="iati" versions="any"/>
             <me:message>The organisation type is invalid.</me:message>
-            <me:diagnostic>For value {.}</me:diagnostic>
          </me:feedback>
       </xsl:if>
       <xsl:next-match/>
@@ -636,11 +510,8 @@
       <xsl:param name="iati-version" tunnel="yes"/>
       <xsl:if test="me:codeListFail(., 'BudgetType', $iati-version)">
          <me:feedback type="danger" class="financial" id="9.43.1">
-            <me:src ref="iati"
-                    versions="any"
-                    href="{me:iati-url('codelists/BudgetType/')}"/>
+            <me:src ref="iati" versions="any"/>
             <me:message>The planned disbursement budget type is invalid.</me:message>
-            <me:diagnostic>For value {.}</me:diagnostic>
          </me:feedback>
       </xsl:if>
       <xsl:next-match/>
@@ -651,11 +522,8 @@
       <xsl:param name="iati-version" tunnel="yes"/>
       <xsl:if test="me:codeListFail(., 'OrganisationType', $iati-version)">
          <me:feedback type="danger" class="financial" id="9.44.1">
-            <me:src ref="iati"
-                    versions="any"
-                    href="{me:iati-url('codelists/OrganisationType/')}"/>
+            <me:src ref="iati" versions="any"/>
             <me:message>The organisation type is invalid.</me:message>
-            <me:diagnostic>For value {.}</me:diagnostic>
          </me:feedback>
       </xsl:if>
       <xsl:next-match/>
@@ -666,11 +534,8 @@
       <xsl:param name="iati-version" tunnel="yes"/>
       <xsl:if test="me:codeListFail(., 'OrganisationType', $iati-version)">
          <me:feedback type="danger" class="financial" id="9.45.1">
-            <me:src ref="iati"
-                    versions="any"
-                    href="{me:iati-url('codelists/OrganisationType/')}"/>
+            <me:src ref="iati" versions="any"/>
             <me:message>The organisation type is invalid.</me:message>
-            <me:diagnostic>For value {.}</me:diagnostic>
          </me:feedback>
       </xsl:if>
       <xsl:next-match/>
@@ -681,11 +546,8 @@
       <xsl:param name="iati-version" tunnel="yes"/>
       <xsl:if test="me:codeListFail(., 'Currency', $iati-version)">
          <me:feedback type="danger" class="financial" id="9.46.1">
-            <me:src ref="iati"
-                    versions="any"
-                    href="{me:iati-url('codelists/Currency/')}"/>
+            <me:src ref="iati" versions="any"/>
             <me:message>The currency code is invalid.</me:message>
-            <me:diagnostic>For value {.}</me:diagnostic>
          </me:feedback>
       </xsl:if>
       <xsl:next-match/>
@@ -696,11 +558,8 @@
       <xsl:param name="iati-version" tunnel="yes"/>
       <xsl:if test="me:codeListFail(., 'PolicyMarker', $iati-version)">
          <me:feedback type="danger" class="classifications" id="9.47.1">
-            <me:src ref="iati"
-                    versions="any"
-                    href="{me:iati-url('codelists/PolicyMarker/')}"/>
+            <me:src ref="iati" versions="any"/>
             <me:message>The policy marker code is invalid.</me:message>
-            <me:diagnostic>For value {.}</me:diagnostic>
          </me:feedback>
       </xsl:if>
       <xsl:next-match/>
@@ -711,11 +570,8 @@
       <xsl:param name="iati-version" tunnel="yes"/>
       <xsl:if test="me:codeListFail(., 'PolicySignificance', $iati-version)">
          <me:feedback type="danger" class="classifications" id="9.48.1">
-            <me:src ref="iati"
-                    versions="any"
-                    href="{me:iati-url('codelists/PolicySignificance/')}"/>
+            <me:src ref="iati" versions="any"/>
             <me:message>The policy marker significance is invalid.</me:message>
-            <me:diagnostic>For value {.}</me:diagnostic>
          </me:feedback>
       </xsl:if>
       <xsl:next-match/>
@@ -726,11 +582,8 @@
       <xsl:param name="iati-version" tunnel="yes"/>
       <xsl:if test="me:codeListFail(., 'PolicyMarkerVocabulary', $iati-version)">
          <me:feedback type="danger" class="classifications" id="9.49.1">
-            <me:src ref="iati"
-                    versions="any"
-                    href="{me:iati-url('codelists/PolicyMarkerVocabulary/')}"/>
+            <me:src ref="iati" versions="any"/>
             <me:message>The policy marker vocabulary is invalid.</me:message>
-            <me:diagnostic>For value {.}</me:diagnostic>
          </me:feedback>
       </xsl:if>
       <xsl:next-match/>
@@ -741,11 +594,8 @@
       <xsl:param name="iati-version" tunnel="yes"/>
       <xsl:if test="me:codeListFail(., 'Country', $iati-version)">
          <me:feedback type="danger" class="geo" id="9.50.1">
-            <me:src ref="iati"
-                    versions="any"
-                    href="{me:iati-url('codelists/Country/')}"/>
+            <me:src ref="iati" versions="any"/>
             <me:message>The recipient country code is invalid.</me:message>
-            <me:diagnostic>For value {.}</me:diagnostic>
          </me:feedback>
       </xsl:if>
       <xsl:next-match/>
@@ -756,9 +606,8 @@
       <xsl:param name="iati-version" tunnel="yes"/>
       <xsl:if test="me:codeListFail(., 'Region', $iati-version)">
          <me:feedback type="danger" class="geo" id="9.51.1">
-            <me:src ref="iati" versions="any" href="{me:iati-url('codelists/Region/')}"/>
+            <me:src ref="iati" versions="any"/>
             <me:message>The recipient region code is invalid.</me:message>
-            <me:diagnostic>For value {.}</me:diagnostic>
          </me:feedback>
       </xsl:if>
       <xsl:next-match/>
@@ -769,11 +618,8 @@
       <xsl:param name="iati-version" tunnel="yes"/>
       <xsl:if test="me:codeListFail(., 'RegionVocabulary', $iati-version)">
          <me:feedback type="danger" class="geo" id="9.52.1">
-            <me:src ref="iati"
-                    versions="any"
-                    href="{me:iati-url('codelists/RegionVocabulary/')}"/>
+            <me:src ref="iati" versions="any"/>
             <me:message>The recipient region vocabulary is invalid.</me:message>
-            <me:diagnostic>For value {.}</me:diagnostic>
          </me:feedback>
       </xsl:if>
       <xsl:next-match/>
@@ -784,11 +630,8 @@
       <xsl:param name="iati-version" tunnel="yes"/>
       <xsl:if test="me:codeListFail(., 'RelatedActivityType', $iati-version)">
          <me:feedback type="danger" class="relations" id="9.53.1">
-            <me:src ref="iati"
-                    versions="any"
-                    href="{me:iati-url('codelists/RelatedActivityType/')}"/>
+            <me:src ref="iati" versions="any"/>
             <me:message>The related activity type is invalid.</me:message>
-            <me:diagnostic>For value {.}</me:diagnostic>
          </me:feedback>
       </xsl:if>
       <xsl:next-match/>
@@ -799,11 +642,8 @@
       <xsl:param name="iati-version" tunnel="yes"/>
       <xsl:if test="me:codeListFail(., 'OrganisationType', $iati-version)">
          <me:feedback type="danger" class="identifiers" id="9.54.1">
-            <me:src ref="iati"
-                    versions="any"
-                    href="{me:iati-url('codelists/OrganisationType/')}"/>
+            <me:src ref="iati" versions="any"/>
             <me:message>The organisation type is invalid.</me:message>
-            <me:diagnostic>For value {.}</me:diagnostic>
          </me:feedback>
       </xsl:if>
       <xsl:next-match/>
@@ -812,11 +652,8 @@
       <xsl:param name="iati-version" tunnel="yes"/>
       <xsl:if test="me:codeListFail(., 'ResultType', $iati-version)">
          <me:feedback type="danger" class="performance" id="9.55.1">
-            <me:src ref="iati"
-                    versions="any"
-                    href="{me:iati-url('codelists/ResultType/')}"/>
+            <me:src ref="iati" versions="any"/>
             <me:message>The result type is invalid.</me:message>
-            <me:diagnostic>For value {.}</me:diagnostic>
          </me:feedback>
       </xsl:if>
       <xsl:next-match/>
@@ -827,11 +664,8 @@
       <xsl:param name="iati-version" tunnel="yes"/>
       <xsl:if test="me:codeListFail(., 'DescriptionType', $iati-version)">
          <me:feedback type="danger" class="performance" id="9.56.1">
-            <me:src ref="iati"
-                    versions="any"
-                    href="{me:iati-url('codelists/DescriptionType/')}"/>
+            <me:src ref="iati" versions="any"/>
             <me:message>The result description type is invalid.</me:message>
-            <me:diagnostic>For value {.}</me:diagnostic>
          </me:feedback>
       </xsl:if>
       <xsl:next-match/>
@@ -842,11 +676,8 @@
       <xsl:param name="iati-version" tunnel="yes"/>
       <xsl:if test="me:codeListFail(., 'FileFormat', $iati-version)">
          <me:feedback type="danger" class="performance" id="9.57.1">
-            <me:src ref="iati"
-                    versions="any"
-                    href="{me:iati-url('codelists/FileFormat/')}"/>
+            <me:src ref="iati" versions="any"/>
             <me:message>The document format is invalid.</me:message>
-            <me:diagnostic>For value {.}</me:diagnostic>
          </me:feedback>
       </xsl:if>
       <xsl:next-match/>
@@ -857,11 +688,8 @@
       <xsl:param name="iati-version" tunnel="yes"/>
       <xsl:if test="me:codeListFail(., 'DocumentCategory', $iati-version)">
          <me:feedback type="danger" class="performance" id="9.58.1">
-            <me:src ref="iati"
-                    versions="any"
-                    href="{me:iati-url('codelists/DocumentCategory/')}"/>
+            <me:src ref="iati" versions="any"/>
             <me:message>The document category code is invalid.</me:message>
-            <me:diagnostic>For value {.}</me:diagnostic>
          </me:feedback>
       </xsl:if>
       <xsl:next-match/>
@@ -872,11 +700,8 @@
       <xsl:param name="iati-version" tunnel="yes"/>
       <xsl:if test="me:codeListFail(., 'Language', $iati-version)">
          <me:feedback type="danger" class="performance" id="9.59.1">
-            <me:src ref="iati"
-                    versions="any"
-                    href="{me:iati-url('codelists/Language/')}"/>
+            <me:src ref="iati" versions="any"/>
             <me:message>The language code is invalid.</me:message>
-            <me:diagnostic>For value {.}</me:diagnostic>
          </me:feedback>
       </xsl:if>
       <xsl:next-match/>
@@ -887,11 +712,8 @@
       <xsl:param name="iati-version" tunnel="yes"/>
       <xsl:if test="me:codeListFail(., 'IndicatorMeasure', $iati-version)">
          <me:feedback type="danger" class="performance" id="9.60.1">
-            <me:src ref="iati"
-                    versions="any"
-                    href="{me:iati-url('codelists/IndicatorMeasure/')}"/>
+            <me:src ref="iati" versions="any"/>
             <me:message>The indicator measure is invalid.</me:message>
-            <me:diagnostic>For value {.}</me:diagnostic>
          </me:feedback>
       </xsl:if>
       <xsl:next-match/>
@@ -902,11 +724,8 @@
       <xsl:param name="iati-version" tunnel="yes"/>
       <xsl:if test="me:codeListFail(., 'FileFormat', $iati-version)">
          <me:feedback type="danger" class="performance" id="9.61.1">
-            <me:src ref="iati"
-                    versions="any"
-                    href="{me:iati-url('codelists/FileFormat/')}"/>
+            <me:src ref="iati" versions="any"/>
             <me:message>The document format is invalid.</me:message>
-            <me:diagnostic>For value {.}</me:diagnostic>
          </me:feedback>
       </xsl:if>
       <xsl:next-match/>
@@ -917,11 +736,8 @@
       <xsl:param name="iati-version" tunnel="yes"/>
       <xsl:if test="me:codeListFail(., 'DocumentCategory', $iati-version)">
          <me:feedback type="danger" class="performance" id="9.62.1">
-            <me:src ref="iati"
-                    versions="any"
-                    href="{me:iati-url('codelists/DocumentCategory/')}"/>
+            <me:src ref="iati" versions="any"/>
             <me:message>The document category code is invalid.</me:message>
-            <me:diagnostic>For value {.}</me:diagnostic>
          </me:feedback>
       </xsl:if>
       <xsl:next-match/>
@@ -932,11 +748,8 @@
       <xsl:param name="iati-version" tunnel="yes"/>
       <xsl:if test="me:codeListFail(., 'Language', $iati-version)">
          <me:feedback type="danger" class="performance" id="9.63.1">
-            <me:src ref="iati"
-                    versions="any"
-                    href="{me:iati-url('codelists/Language/')}"/>
+            <me:src ref="iati" versions="any"/>
             <me:message>The language code is invalid.</me:message>
-            <me:diagnostic>For value {.}</me:diagnostic>
          </me:feedback>
       </xsl:if>
       <xsl:next-match/>
@@ -947,11 +760,8 @@
       <xsl:param name="iati-version" tunnel="yes"/>
       <xsl:if test="me:codeListFail(., 'DescriptionType', $iati-version)">
          <me:feedback type="danger" class="performance" id="9.64.1">
-            <me:src ref="iati"
-                    versions="any"
-                    href="{me:iati-url('codelists/DescriptionType/')}"/>
+            <me:src ref="iati" versions="any"/>
             <me:message>The indicator description type is invalid.</me:message>
-            <me:diagnostic>For value {.}</me:diagnostic>
          </me:feedback>
       </xsl:if>
       <xsl:next-match/>
@@ -962,11 +772,8 @@
       <xsl:param name="iati-version" tunnel="yes"/>
       <xsl:if test="me:codeListFail(., 'FileFormat', $iati-version)">
          <me:feedback type="danger" class="performance" id="9.65.1">
-            <me:src ref="iati"
-                    versions="any"
-                    href="{me:iati-url('codelists/FileFormat/')}"/>
+            <me:src ref="iati" versions="any"/>
             <me:message>The document format is invalid.</me:message>
-            <me:diagnostic>For value {.}</me:diagnostic>
          </me:feedback>
       </xsl:if>
       <xsl:next-match/>
@@ -977,11 +784,8 @@
       <xsl:param name="iati-version" tunnel="yes"/>
       <xsl:if test="me:codeListFail(., 'DocumentCategory', $iati-version)">
          <me:feedback type="danger" class="performance" id="9.66.1">
-            <me:src ref="iati"
-                    versions="any"
-                    href="{me:iati-url('codelists/DocumentCategory/')}"/>
+            <me:src ref="iati" versions="any"/>
             <me:message>The document category code is invalid.</me:message>
-            <me:diagnostic>For value {.}</me:diagnostic>
          </me:feedback>
       </xsl:if>
       <xsl:next-match/>
@@ -992,11 +796,8 @@
       <xsl:param name="iati-version" tunnel="yes"/>
       <xsl:if test="me:codeListFail(., 'Language', $iati-version)">
          <me:feedback type="danger" class="performance" id="9.67.1">
-            <me:src ref="iati"
-                    versions="any"
-                    href="{me:iati-url('codelists/Language/')}"/>
+            <me:src ref="iati" versions="any"/>
             <me:message>The language code is invalid.</me:message>
-            <me:diagnostic>For value {.}</me:diagnostic>
          </me:feedback>
       </xsl:if>
       <xsl:next-match/>
@@ -1007,11 +808,8 @@
       <xsl:param name="iati-version" tunnel="yes"/>
       <xsl:if test="me:codeListFail(., 'FileFormat', $iati-version)">
          <me:feedback type="danger" class="performance" id="9.68.1">
-            <me:src ref="iati"
-                    versions="any"
-                    href="{me:iati-url('codelists/FileFormat/')}"/>
+            <me:src ref="iati" versions="any"/>
             <me:message>The document format is invalid.</me:message>
-            <me:diagnostic>For value {.}</me:diagnostic>
          </me:feedback>
       </xsl:if>
       <xsl:next-match/>
@@ -1022,11 +820,8 @@
       <xsl:param name="iati-version" tunnel="yes"/>
       <xsl:if test="me:codeListFail(., 'DocumentCategory', $iati-version)">
          <me:feedback type="danger" class="performance" id="9.69.1">
-            <me:src ref="iati"
-                    versions="any"
-                    href="{me:iati-url('codelists/DocumentCategory/')}"/>
+            <me:src ref="iati" versions="any"/>
             <me:message>The document category code is invalid.</me:message>
-            <me:diagnostic>For value {.}</me:diagnostic>
          </me:feedback>
       </xsl:if>
       <xsl:next-match/>
@@ -1037,11 +832,8 @@
       <xsl:param name="iati-version" tunnel="yes"/>
       <xsl:if test="me:codeListFail(., 'Language', $iati-version)">
          <me:feedback type="danger" class="performance" id="9.70.1">
-            <me:src ref="iati"
-                    versions="any"
-                    href="{me:iati-url('codelists/Language/')}"/>
+            <me:src ref="iati" versions="any"/>
             <me:message>The language code is invalid.</me:message>
-            <me:diagnostic>For value {.}</me:diagnostic>
          </me:feedback>
       </xsl:if>
       <xsl:next-match/>
@@ -1052,11 +844,8 @@
       <xsl:param name="iati-version" tunnel="yes"/>
       <xsl:if test="me:codeListFail(., 'FileFormat', $iati-version)">
          <me:feedback type="danger" class="performance" id="9.71.1">
-            <me:src ref="iati"
-                    versions="any"
-                    href="{me:iati-url('codelists/FileFormat/')}"/>
+            <me:src ref="iati" versions="any"/>
             <me:message>The document format is invalid.</me:message>
-            <me:diagnostic>For value {.}</me:diagnostic>
          </me:feedback>
       </xsl:if>
       <xsl:next-match/>
@@ -1067,11 +856,8 @@
       <xsl:param name="iati-version" tunnel="yes"/>
       <xsl:if test="me:codeListFail(., 'DocumentCategory', $iati-version)">
          <me:feedback type="danger" class="performance" id="9.72.1">
-            <me:src ref="iati"
-                    versions="any"
-                    href="{me:iati-url('codelists/DocumentCategory/')}"/>
+            <me:src ref="iati" versions="any"/>
             <me:message>The document category code is invalid.</me:message>
-            <me:diagnostic>For value {.}</me:diagnostic>
          </me:feedback>
       </xsl:if>
       <xsl:next-match/>
@@ -1082,11 +868,8 @@
       <xsl:param name="iati-version" tunnel="yes"/>
       <xsl:if test="me:codeListFail(., 'Language', $iati-version)">
          <me:feedback type="danger" class="performance" id="9.73.1">
-            <me:src ref="iati"
-                    versions="any"
-                    href="{me:iati-url('codelists/Language/')}"/>
+            <me:src ref="iati" versions="any"/>
             <me:message>The language code is invalid.</me:message>
-            <me:diagnostic>For value {.}</me:diagnostic>
          </me:feedback>
       </xsl:if>
       <xsl:next-match/>
@@ -1097,11 +880,8 @@
       <xsl:param name="iati-version" tunnel="yes"/>
       <xsl:if test="me:codeListFail(., 'IndicatorVocabulary', $iati-version)">
          <me:feedback type="danger" class="performance" id="9.74.1">
-            <me:src ref="iati"
-                    versions="any"
-                    href="{me:iati-url('codelists/IndicatorVocabulary/')}"/>
+            <me:src ref="iati" versions="any"/>
             <me:message>The indicator reference code vocabulary is invalid.</me:message>
-            <me:diagnostic>For value {.}</me:diagnostic>
          </me:feedback>
       </xsl:if>
       <xsl:next-match/>
@@ -1112,11 +892,8 @@
       <xsl:param name="iati-version" tunnel="yes"/>
       <xsl:if test="me:codeListFail(., 'ResultVocabulary', $iati-version)">
          <me:feedback type="danger" class="performance" id="9.75.1">
-            <me:src ref="iati"
-                    versions="any"
-                    href="{me:iati-url('codelists/ResultVocabulary/')}"/>
+            <me:src ref="iati" versions="any"/>
             <me:message>The result reference code vocabulary is invalid.</me:message>
-            <me:diagnostic>For value {.}</me:diagnostic>
          </me:feedback>
       </xsl:if>
       <xsl:next-match/>
@@ -1127,9 +904,8 @@
       <xsl:param name="iati-version" tunnel="yes"/>
       <xsl:if test="me:codeListFail(., 'Sector', $iati-version)">
          <me:feedback type="danger" class="classifications" id="9.76.1">
-            <me:src ref="iati" versions="any" href="{me:iati-url('codelists/Sector/')}"/>
+            <me:src ref="iati" versions="any"/>
             <me:message>The OECD DAC sector is invalid.</me:message>
-            <me:diagnostic>For value {.}</me:diagnostic>
          </me:feedback>
       </xsl:if>
       <xsl:next-match/>
@@ -1140,11 +916,8 @@
       <xsl:param name="iati-version" tunnel="yes"/>
       <xsl:if test="me:codeListFail(., 'SectorCategory', $iati-version)">
          <me:feedback type="danger" class="classifications" id="9.77.1">
-            <me:src ref="iati"
-                    versions="any"
-                    href="{me:iati-url('codelists/SectorCategory/')}"/>
+            <me:src ref="iati" versions="any"/>
             <me:message>The OECD DAC category is invalid.</me:message>
-            <me:diagnostic>For value {.}</me:diagnostic>
          </me:feedback>
       </xsl:if>
       <xsl:next-match/>
@@ -1155,11 +928,8 @@
       <xsl:param name="iati-version" tunnel="yes"/>
       <xsl:if test="me:codeListFail(., 'SectorVocabulary', $iati-version)">
          <me:feedback type="danger" class="classifications" id="9.78.1">
-            <me:src ref="iati"
-                    versions="any"
-                    href="{me:iati-url('codelists/SectorVocabulary/')}"/>
+            <me:src ref="iati" versions="any"/>
             <me:message>The sector vocabulary is invalid.</me:message>
-            <me:diagnostic>For value {.}</me:diagnostic>
          </me:feedback>
       </xsl:if>
       <xsl:next-match/>
@@ -1170,11 +940,8 @@
       <xsl:param name="iati-version" tunnel="yes"/>
       <xsl:if test="me:codeListFail(., 'TagVocabulary', $iati-version)">
          <me:feedback type="danger" class="classifications" id="9.79.1">
-            <me:src ref="iati"
-                    versions="any"
-                    href="{me:iati-url('codelists/TagVocabulary/')}"/>
+            <me:src ref="iati" versions="any"/>
             <me:message>The tag vocabulary is invalid.</me:message>
-            <me:diagnostic>For value {.}</me:diagnostic>
          </me:feedback>
       </xsl:if>
       <xsl:next-match/>
@@ -1185,11 +952,8 @@
       <xsl:param name="iati-version" tunnel="yes"/>
       <xsl:if test="me:codeListFail(., 'AidType', $iati-version)">
          <me:feedback type="danger" class="financial" id="9.80.1">
-            <me:src ref="iati"
-                    versions="any"
-                    href="{me:iati-url('codelists/AidType/')}"/>
+            <me:src ref="iati" versions="any"/>
             <me:message>The aid type is invalid.</me:message>
-            <me:diagnostic>For value {.}</me:diagnostic>
          </me:feedback>
       </xsl:if>
       <xsl:next-match/>
@@ -1200,11 +964,8 @@
       <xsl:param name="iati-version" tunnel="yes"/>
       <xsl:if test="me:codeListFail(., 'AidTypeVocabulary', $iati-version)">
          <me:feedback type="danger" class="financial" id="9.81.1">
-            <me:src ref="iati"
-                    versions="any"
-                    href="{me:iati-url('codelists/AidTypeVocabulary/')}"/>
+            <me:src ref="iati" versions="any"/>
             <me:message>The aid type vocabulary is invalid.</me:message>
-            <me:diagnostic>For value {.}</me:diagnostic>
          </me:feedback>
       </xsl:if>
       <xsl:next-match/>
@@ -1215,11 +976,8 @@
       <xsl:param name="iati-version" tunnel="yes"/>
       <xsl:if test="me:codeListFail(., 'DisbursementChannel', $iati-version)">
          <me:feedback type="danger" class="financial" id="9.82.1">
-            <me:src ref="iati"
-                    versions="any"
-                    href="{me:iati-url('codelists/DisbursementChannel/')}"/>
+            <me:src ref="iati" versions="any"/>
             <me:message>The disbursement channel code is invalid.</me:message>
-            <me:diagnostic>For value {.}</me:diagnostic>
          </me:feedback>
       </xsl:if>
       <xsl:next-match/>
@@ -1230,11 +988,8 @@
       <xsl:param name="iati-version" tunnel="yes"/>
       <xsl:if test="me:codeListFail(., 'FinanceType', $iati-version)">
          <me:feedback type="danger" class="financial" id="9.83.1">
-            <me:src ref="iati"
-                    versions="any"
-                    href="{me:iati-url('codelists/FinanceType/')}"/>
+            <me:src ref="iati" versions="any"/>
             <me:message>The finance type is invalid.</me:message>
-            <me:diagnostic>For value {.}</me:diagnostic>
          </me:feedback>
       </xsl:if>
       <xsl:next-match/>
@@ -1245,11 +1000,8 @@
       <xsl:param name="iati-version" tunnel="yes"/>
       <xsl:if test="me:codeListFail(., 'FlowType', $iati-version)">
          <me:feedback type="danger" class="financial" id="9.84.1">
-            <me:src ref="iati"
-                    versions="any"
-                    href="{me:iati-url('codelists/FlowType/')}"/>
+            <me:src ref="iati" versions="any"/>
             <me:message>The flow type is invalid.</me:message>
-            <me:diagnostic>For value {.}</me:diagnostic>
          </me:feedback>
       </xsl:if>
       <xsl:next-match/>
@@ -1260,11 +1012,8 @@
       <xsl:param name="iati-version" tunnel="yes"/>
       <xsl:if test="me:codeListFail(., 'Country', $iati-version)">
          <me:feedback type="danger" class="financial" id="9.85.1">
-            <me:src ref="iati"
-                    versions="any"
-                    href="{me:iati-url('codelists/Country/')}"/>
+            <me:src ref="iati" versions="any"/>
             <me:message>The recipient country code is invalid.</me:message>
-            <me:diagnostic>For value {.}</me:diagnostic>
          </me:feedback>
       </xsl:if>
       <xsl:next-match/>
@@ -1275,9 +1024,8 @@
       <xsl:param name="iati-version" tunnel="yes"/>
       <xsl:if test="me:codeListFail(., 'Region', $iati-version)">
          <me:feedback type="danger" class="financial" id="9.86.1">
-            <me:src ref="iati" versions="any" href="{me:iati-url('codelists/Region/')}"/>
+            <me:src ref="iati" versions="any"/>
             <me:message>The recipient region code is invalid.</me:message>
-            <me:diagnostic>For value {.}</me:diagnostic>
          </me:feedback>
       </xsl:if>
       <xsl:next-match/>
@@ -1288,11 +1036,8 @@
       <xsl:param name="iati-version" tunnel="yes"/>
       <xsl:if test="me:codeListFail(., 'RegionVocabulary', $iati-version)">
          <me:feedback type="danger" class="financial" id="9.87.1">
-            <me:src ref="iati"
-                    versions="any"
-                    href="{me:iati-url('codelists/RegionVocabulary/')}"/>
+            <me:src ref="iati" versions="any"/>
             <me:message>The recipient region vocabulary is invalid.</me:message>
-            <me:diagnostic>For value {.}</me:diagnostic>
          </me:feedback>
       </xsl:if>
       <xsl:next-match/>
@@ -1303,11 +1048,8 @@
       <xsl:param name="iati-version" tunnel="yes"/>
       <xsl:if test="me:codeListFail(., 'OrganisationType', $iati-version)">
          <me:feedback type="danger" class="financial" id="9.88.1">
-            <me:src ref="iati"
-                    versions="any"
-                    href="{me:iati-url('codelists/OrganisationType/')}"/>
+            <me:src ref="iati" versions="any"/>
             <me:message>The organisation type is invalid.</me:message>
-            <me:diagnostic>For value {.}</me:diagnostic>
          </me:feedback>
       </xsl:if>
       <xsl:next-match/>
@@ -1318,11 +1060,8 @@
       <xsl:param name="iati-version" tunnel="yes"/>
       <xsl:if test="me:codeListFail(., 'OrganisationType', $iati-version)">
          <me:feedback type="danger" class="financial" id="9.89.1">
-            <me:src ref="iati"
-                    versions="any"
-                    href="{me:iati-url('codelists/OrganisationType/')}"/>
+            <me:src ref="iati" versions="any"/>
             <me:message>The organisation type is invalid.</me:message>
-            <me:diagnostic>For value {.}</me:diagnostic>
          </me:feedback>
       </xsl:if>
       <xsl:next-match/>
@@ -1333,9 +1072,8 @@
       <xsl:param name="iati-version" tunnel="yes"/>
       <xsl:if test="me:codeListFail(., 'Sector', $iati-version)">
          <me:feedback type="danger" class="financial" id="9.90.1">
-            <me:src ref="iati" versions="any" href="{me:iati-url('codelists/Sector/')}"/>
-            <me:message>The OECD DAC sector is invalid.</me:message>
-            <me:diagnostic>For value {.}</me:diagnostic>
+            <me:src ref="iati" versions="any"/>
+            <me:message>The DAC sector code is invalid.</me:message>
          </me:feedback>
       </xsl:if>
       <xsl:next-match/>
@@ -1346,11 +1084,8 @@
       <xsl:param name="iati-version" tunnel="yes"/>
       <xsl:if test="me:codeListFail(., 'SectorVocabulary', $iati-version)">
          <me:feedback type="danger" class="financial" id="9.91.1">
-            <me:src ref="iati"
-                    versions="any"
-                    href="{me:iati-url('codelists/SectorVocabulary/')}"/>
+            <me:src ref="iati" versions="any"/>
             <me:message>The sector vocabulary is invalid.</me:message>
-            <me:diagnostic>For value {.}</me:diagnostic>
          </me:feedback>
       </xsl:if>
       <xsl:next-match/>
@@ -1361,11 +1096,8 @@
       <xsl:param name="iati-version" tunnel="yes"/>
       <xsl:if test="me:codeListFail(., 'TiedStatus', $iati-version)">
          <me:feedback type="danger" class="financial" id="9.92.1">
-            <me:src ref="iati"
-                    versions="any"
-                    href="{me:iati-url('codelists/TiedStatus/')}"/>
+            <me:src ref="iati" versions="any"/>
             <me:message>The tied status code is invalid.</me:message>
-            <me:diagnostic>For value {.}</me:diagnostic>
          </me:feedback>
       </xsl:if>
       <xsl:next-match/>
@@ -1376,11 +1108,8 @@
       <xsl:param name="iati-version" tunnel="yes"/>
       <xsl:if test="me:codeListFail(., 'TransactionType', $iati-version)">
          <me:feedback type="danger" class="financial" id="9.93.1">
-            <me:src ref="iati"
-                    versions="any"
-                    href="{me:iati-url('codelists/TransactionType/')}"/>
+            <me:src ref="iati" versions="any"/>
             <me:message>The transaction type is invalid.</me:message>
-            <me:diagnostic>For value {.}</me:diagnostic>
          </me:feedback>
       </xsl:if>
       <xsl:next-match/>
@@ -1391,11 +1120,8 @@
       <xsl:param name="iati-version" tunnel="yes"/>
       <xsl:if test="me:codeListFail(., 'Currency', $iati-version)">
          <me:feedback type="danger" class="financial" id="9.94.1">
-            <me:src ref="iati"
-                    versions="any"
-                    href="{me:iati-url('codelists/Currency/')}"/>
+            <me:src ref="iati" versions="any"/>
             <me:message>The currency code is invalid.</me:message>
-            <me:diagnostic>For value {.}</me:diagnostic>
          </me:feedback>
       </xsl:if>
       <xsl:next-match/>
@@ -1404,11 +1130,8 @@
       <xsl:param name="iati-version" tunnel="yes"/>
       <xsl:if test="me:codeListFail(., 'Language', $iati-version)">
          <me:feedback type="danger" class="iati" id="9.95.1">
-            <me:src ref="iati"
-                    versions="any"
-                    href="{me:iati-url('codelists/Language/')}"/>
+            <me:src ref="iati" versions="any"/>
             <me:message>The language code is invalid.</me:message>
-            <me:diagnostic>For value {.}</me:diagnostic>
          </me:feedback>
       </xsl:if>
       <xsl:next-match/>
@@ -1419,11 +1142,8 @@
       <xsl:param name="iati-version" tunnel="yes"/>
       <xsl:if test="me:codeListFail(., 'Currency', $iati-version)">
          <me:feedback type="danger" class="organisation" id="9.96.1">
-            <me:src ref="iati"
-                    versions="any"
-                    href="{me:iati-url('codelists/Currency/')}"/>
+            <me:src ref="iati" versions="any"/>
             <me:message>The currency code is invalid.</me:message>
-            <me:diagnostic>For value {.}</me:diagnostic>
          </me:feedback>
       </xsl:if>
       <xsl:next-match/>
@@ -1432,11 +1152,8 @@
       <xsl:param name="iati-version" tunnel="yes"/>
       <xsl:if test="me:codeListFail(., 'Version', $iati-version)">
          <me:feedback type="danger" class="iati" id="9.97.1">
-            <me:src ref="iati"
-                    versions="any"
-                    href="{me:iati-url('codelists/Version/')}"/>
+            <me:src ref="iati" versions="any"/>
             <me:message>The IATI version of the dataset is not a valid version number.</me:message>
-            <me:diagnostic>For value {.}</me:diagnostic>
          </me:feedback>
       </xsl:if>
       <xsl:next-match/>
@@ -1447,11 +1164,8 @@
       <xsl:param name="iati-version" tunnel="yes"/>
       <xsl:if test="me:codeListFail(., 'FileFormat', $iati-version)">
          <me:feedback type="danger" class="documents" id="9.98.1">
-            <me:src ref="iati"
-                    versions="any"
-                    href="{me:iati-url('codelists/FileFormat/')}"/>
+            <me:src ref="iati" versions="any"/>
             <me:message>The document format is invalid.</me:message>
-            <me:diagnostic>For value {.}</me:diagnostic>
          </me:feedback>
       </xsl:if>
       <xsl:next-match/>
@@ -1462,11 +1176,8 @@
       <xsl:param name="iati-version" tunnel="yes"/>
       <xsl:if test="me:codeListFail(., 'DocumentCategory', $iati-version)">
          <me:feedback type="danger" class="documents" id="9.99.1">
-            <me:src ref="iati"
-                    versions="any"
-                    href="{me:iati-url('codelists/DocumentCategory/')}"/>
+            <me:src ref="iati" versions="any"/>
             <me:message>The document category code is invalid.</me:message>
-            <me:diagnostic>For value {.}</me:diagnostic>
          </me:feedback>
       </xsl:if>
       <xsl:next-match/>
@@ -1477,11 +1188,8 @@
       <xsl:param name="iati-version" tunnel="yes"/>
       <xsl:if test="me:codeListFail(., 'Language', $iati-version)">
          <me:feedback type="danger" class="documents" id="9.100.1">
-            <me:src ref="iati"
-                    versions="any"
-                    href="{me:iati-url('codelists/Language/')}"/>
+            <me:src ref="iati" versions="any"/>
             <me:message>The language code is invalid.</me:message>
-            <me:diagnostic>For value {.}</me:diagnostic>
          </me:feedback>
       </xsl:if>
       <xsl:next-match/>
@@ -1492,11 +1200,8 @@
       <xsl:param name="iati-version" tunnel="yes"/>
       <xsl:if test="me:codeListFail(., 'Country', $iati-version)">
          <me:feedback type="danger" class="documents" id="9.101.1">
-            <me:src ref="iati"
-                    versions="any"
-                    href="{me:iati-url('codelists/Country/')}"/>
+            <me:src ref="iati" versions="any"/>
             <me:message>The recipient country code is invalid.</me:message>
-            <me:diagnostic>For value {.}</me:diagnostic>
          </me:feedback>
       </xsl:if>
       <xsl:next-match/>
@@ -1507,11 +1212,8 @@
       <xsl:param name="iati-version" tunnel="yes"/>
       <xsl:if test="me:codeListFail(., 'BudgetStatus', $iati-version)">
          <me:feedback type="danger" class="financial" id="9.102.1">
-            <me:src ref="iati"
-                    versions="any"
-                    href="{me:iati-url('codelists/BudgetStatus/')}"/>
+            <me:src ref="iati" versions="any"/>
             <me:message>The budget status is invalid.</me:message>
-            <me:diagnostic>For value {.}</me:diagnostic>
          </me:feedback>
       </xsl:if>
       <xsl:next-match/>
@@ -1522,11 +1224,8 @@
       <xsl:param name="iati-version" tunnel="yes"/>
       <xsl:if test="me:codeListFail(., 'Country', $iati-version)">
          <me:feedback type="danger" class="financial" id="9.103.1">
-            <me:src ref="iati"
-                    versions="any"
-                    href="{me:iati-url('codelists/Country/')}"/>
+            <me:src ref="iati" versions="any"/>
             <me:message>The recipient country code is invalid.</me:message>
-            <me:diagnostic>For value {.}</me:diagnostic>
          </me:feedback>
       </xsl:if>
       <xsl:next-match/>
@@ -1537,11 +1236,8 @@
       <xsl:param name="iati-version" tunnel="yes"/>
       <xsl:if test="me:codeListFail(., 'Currency', $iati-version)">
          <me:feedback type="danger" class="financial" id="9.104.1">
-            <me:src ref="iati"
-                    versions="any"
-                    href="{me:iati-url('codelists/Currency/')}"/>
+            <me:src ref="iati" versions="any"/>
             <me:message>The currency code is invalid.</me:message>
-            <me:diagnostic>For value {.}</me:diagnostic>
          </me:feedback>
       </xsl:if>
       <xsl:next-match/>
@@ -1552,11 +1248,8 @@
       <xsl:param name="iati-version" tunnel="yes"/>
       <xsl:if test="me:codeListFail(., 'BudgetStatus', $iati-version)">
          <me:feedback type="danger" class="financial" id="9.105.1">
-            <me:src ref="iati"
-                    versions="any"
-                    href="{me:iati-url('codelists/BudgetStatus/')}"/>
+            <me:src ref="iati" versions="any"/>
             <me:message>The budget status is invalid.</me:message>
-            <me:diagnostic>For value {.}</me:diagnostic>
          </me:feedback>
       </xsl:if>
       <xsl:next-match/>
@@ -1567,11 +1260,8 @@
       <xsl:param name="iati-version" tunnel="yes"/>
       <xsl:if test="me:codeListFail(., 'Currency', $iati-version)">
          <me:feedback type="danger" class="financial" id="9.106.1">
-            <me:src ref="iati"
-                    versions="any"
-                    href="{me:iati-url('codelists/Currency/')}"/>
+            <me:src ref="iati" versions="any"/>
             <me:message>The currency code is invalid.</me:message>
-            <me:diagnostic>For value {.}</me:diagnostic>
          </me:feedback>
       </xsl:if>
       <xsl:next-match/>
@@ -1582,11 +1272,8 @@
       <xsl:param name="iati-version" tunnel="yes"/>
       <xsl:if test="me:codeListFail(., 'BudgetStatus', $iati-version)">
          <me:feedback type="danger" class="financial" id="9.107.1">
-            <me:src ref="iati"
-                    versions="any"
-                    href="{me:iati-url('codelists/BudgetStatus/')}"/>
+            <me:src ref="iati" versions="any"/>
             <me:message>The budget status is invalid.</me:message>
-            <me:diagnostic>For value {.}</me:diagnostic>
          </me:feedback>
       </xsl:if>
       <xsl:next-match/>
@@ -1597,9 +1284,8 @@
       <xsl:param name="iati-version" tunnel="yes"/>
       <xsl:if test="me:codeListFail(., 'Region', $iati-version)">
          <me:feedback type="danger" class="financial" id="9.108.1">
-            <me:src ref="iati" versions="any" href="{me:iati-url('codelists/Region/')}"/>
+            <me:src ref="iati" versions="any"/>
             <me:message>The recipient region budget code is invalid.</me:message>
-            <me:diagnostic>For value {.}</me:diagnostic>
          </me:feedback>
       </xsl:if>
       <xsl:next-match/>
@@ -1610,11 +1296,8 @@
       <xsl:param name="iati-version" tunnel="yes"/>
       <xsl:if test="me:codeListFail(., 'RegionVocabulary', $iati-version)">
          <me:feedback type="danger" class="geo" id="9.109.1">
-            <me:src ref="iati"
-                    versions="any"
-                    href="{me:iati-url('codelists/RegionVocabulary/')}"/>
+            <me:src ref="iati" versions="any"/>
             <me:message>The recipient region vocabulary is invalid.</me:message>
-            <me:diagnostic>For value {.}</me:diagnostic>
          </me:feedback>
       </xsl:if>
       <xsl:next-match/>
@@ -1625,11 +1308,8 @@
       <xsl:param name="iati-version" tunnel="yes"/>
       <xsl:if test="me:codeListFail(., 'Currency', $iati-version)">
          <me:feedback type="danger" class="geo" id="9.110.1">
-            <me:src ref="iati"
-                    versions="any"
-                    href="{me:iati-url('codelists/Currency/')}"/>
+            <me:src ref="iati" versions="any"/>
             <me:message>The currency code is invalid.</me:message>
-            <me:diagnostic>For value {.}</me:diagnostic>
          </me:feedback>
       </xsl:if>
       <xsl:next-match/>
@@ -1640,11 +1320,8 @@
       <xsl:param name="iati-version" tunnel="yes"/>
       <xsl:if test="me:codeListFail(., 'Currency', $iati-version)">
          <me:feedback type="danger" class="geo" id="9.111.1">
-            <me:src ref="iati"
-                    versions="any"
-                    href="{me:iati-url('codelists/Currency/')}"/>
+            <me:src ref="iati" versions="any"/>
             <me:message>The currency code is invalid.</me:message>
-            <me:diagnostic>For value {.}</me:diagnostic>
          </me:feedback>
       </xsl:if>
       <xsl:next-match/>
@@ -1655,11 +1332,8 @@
       <xsl:param name="iati-version" tunnel="yes"/>
       <xsl:if test="me:codeListFail(., 'OrganisationType', $iati-version)">
          <me:feedback type="danger" class="information" id="9.112.1">
-            <me:src ref="iati"
-                    versions="any"
-                    href="{me:iati-url('codelists/OrganisationType/')}"/>
+            <me:src ref="iati" versions="any"/>
             <me:message>The organisation type is invalid.</me:message>
-            <me:diagnostic>For value {.}</me:diagnostic>
          </me:feedback>
       </xsl:if>
       <xsl:next-match/>
@@ -1670,11 +1344,8 @@
       <xsl:param name="iati-version" tunnel="yes"/>
       <xsl:if test="me:codeListFail(., 'BudgetStatus', $iati-version)">
          <me:feedback type="danger" class="financial" id="9.113.1">
-            <me:src ref="iati"
-                    versions="any"
-                    href="{me:iati-url('codelists/BudgetStatus/')}"/>
+            <me:src ref="iati" versions="any"/>
             <me:message>The budget status is invalid.</me:message>
-            <me:diagnostic>For value {.}</me:diagnostic>
          </me:feedback>
       </xsl:if>
       <xsl:next-match/>
@@ -1685,28 +1356,22 @@
       <xsl:param name="iati-version" tunnel="yes"/>
       <xsl:if test="me:codeListFail(., 'Currency', $iati-version)">
          <me:feedback type="danger" class="financial" id="9.114.1">
-            <me:src ref="iati"
-                    versions="any"
-                    href="{me:iati-url('codelists/Currency/')}"/>
+            <me:src ref="iati" versions="any"/>
             <me:message>The currency code is invalid.</me:message>
-            <me:diagnostic>For value {.}</me:diagnostic>
          </me:feedback>
       </xsl:if>
       <xsl:next-match/>
    </xsl:template>
     
-
+   <!-- renamed to other-flag in IATI 2.01 -->
     <xsl:template match="//iati-activity/crs-add/aidtype-flag/@code"
                  mode="rules"
                  priority="9.116">
       <xsl:param name="iati-version" tunnel="yes"/>
       <xsl:if test="me:codeListFail(., 'AidTypeFlag', $iati-version)">
          <me:feedback type="danger" class="iati" id="9.116.1">
-            <me:src ref="iati"
-                    versions="any"
-                    href="{me:iati-url('codelists/AidTypeFlag/')}"/>
+            <me:src ref="iati" versions="1.0x"/>
             <me:message>The AidType flag is invalid.</me:message>
-            <me:diagnostic>For value {.}</me:diagnostic>
          </me:feedback>
       </xsl:if>
       <xsl:next-match/>
@@ -1717,11 +1382,8 @@
       <xsl:param name="iati-version" tunnel="yes"/>
       <xsl:if test="me:codeListFail(., 'Country', $iati-version)">
          <me:feedback type="danger" class="geo" id="9.117.1">
-            <me:src ref="iati"
-                    versions="any"
-                    href="{me:iati-url('codelists/Country/')}"/>
+            <me:src ref="iati" versions="any"/>
             <me:message>The country code is invalid.</me:message>
-            <me:diagnostic>For value {.}</me:diagnostic>
          </me:feedback>
       </xsl:if>
       <xsl:next-match/>
@@ -1732,11 +1394,8 @@
       <xsl:param name="iati-version" tunnel="yes"/>
       <xsl:if test="me:codeListFail(., 'GeographicalPrecision', $iati-version)">
          <me:feedback type="danger" class="geo" id="9.118.1">
-            <me:src ref="iati"
-                    versions="any"
-                    href="{me:iati-url('codelists/GeographicalPrecision/')}"/>
+            <me:src ref="iati" versions="any"/>
             <me:message>The geographical precision code is invalid.</me:message>
-            <me:diagnostic>For value {.}</me:diagnostic>
          </me:feedback>
       </xsl:if>
       <xsl:next-match/>
@@ -1747,11 +1406,8 @@
       <xsl:param name="iati-version" tunnel="yes"/>
       <xsl:if test="me:codeListFail(., 'GazetteerAgency', $iati-version)">
          <me:feedback type="danger" class="geo" id="9.119.1">
-            <me:src ref="iati"
-                    versions="any"
-                    href="{me:iati-url('codelists/GazetteerAgency/')}"/>
-            <me:message>The gazetteer agency code is invalid.</me:message>
-            <me:diagnostic>For value {.}</me:diagnostic>
+            <me:src ref="iati" versions="any"/>
+            <me:message>The gazeteer agency code is invalid.</me:message>
          </me:feedback>
       </xsl:if>
       <xsl:next-match/>
@@ -1762,11 +1418,8 @@
       <xsl:param name="iati-version" tunnel="yes"/>
       <xsl:if test="me:codeListFail(., 'LocationType', $iati-version)">
          <me:feedback type="danger" class="geo" id="9.120.1">
-            <me:src ref="iati"
-                    versions="any"
-                    href="{me:iati-url('codelists/LocationType/')}"/>
+            <me:src ref="iati" versions="any"/>
             <me:message>The location type code is invalid.</me:message>
-            <me:diagnostic>For value {.}</me:diagnostic>
          </me:feedback>
       </xsl:if>
       <xsl:next-match/>
@@ -1779,11 +1432,8 @@
       <xsl:param name="iati-version" tunnel="yes"/>
       <xsl:if test="me:codeListFail(., 'Currency', $iati-version)">
          <me:feedback type="danger" class="financial" id="9.122.1">
-            <me:src ref="iati"
-                    versions="any"
-                    href="{me:iati-url('codelists/Currency/')}"/>
+            <me:src ref="iati" versions="any"/>
             <me:message>The currency code is invalid.</me:message>
-            <me:diagnostic>For value {.}</me:diagnostic>
          </me:feedback>
       </xsl:if>
       <xsl:next-match/>
@@ -1794,11 +1444,8 @@
       <xsl:param name="iati-version" tunnel="yes"/>
       <xsl:if test="me:codeListFail(., 'Currency', $iati-version)">
          <me:feedback type="danger" class="financial" id="9.123.1">
-            <me:src ref="iati"
-                    versions="any"
-                    href="{me:iati-url('codelists/Currency/')}"/>
+            <me:src ref="iati" versions="any"/>
             <me:message>The currency code is invalid.</me:message>
-            <me:diagnostic>For value {.}</me:diagnostic>
          </me:feedback>
       </xsl:if>
       <xsl:next-match/>
@@ -1809,73 +1456,10 @@
       <xsl:param name="iati-version" tunnel="yes"/>
       <xsl:if test="me:codeListFail(., 'SectorCategory', $iati-version)">
          <me:feedback type="danger" class="financial" id="9.124.1">
-            <me:src ref="iati"
-                    versions="any"
-                    href="{me:iati-url('codelists/SectorCategory/')}"/>
+            <me:src ref="iati" versions="any"/>
             <me:message>The DAC3 sector code is invalid.</me:message>
-            <me:diagnostic>For value {.}</me:diagnostic>
          </me:feedback>
       </xsl:if>
       <xsl:next-match/>
    </xsl:template>    
-    <xsl:template match="//iati-activity/tag[@vocabulary = '2']/@code"
-                 mode="rules"
-                 priority="9.125">
-      <xsl:param name="iati-version" tunnel="yes"/>
-      <xsl:if test="me:codeListFail(., 'UNSDG-Goals', $iati-version)">
-         <me:feedback type="danger" class="iati" id="9.125.1">
-            <me:src ref="iati"
-                    versions="any"
-                    href="{me:iati-url('codelists/UNSDG-Goals/')}"/>
-            <me:message>The UNSDG goal code is invalid.</me:message>
-            <me:diagnostic>For value {.}</me:diagnostic>
-         </me:feedback>
-      </xsl:if>
-      <xsl:next-match/>
-   </xsl:template>
-    <xsl:template match="//iati-activity/tag[@vocabulary = '3']/@code"
-                 mode="rules"
-                 priority="9.126">
-      <xsl:param name="iati-version" tunnel="yes"/>
-      <xsl:if test="me:codeListFail(., 'UNSDG-Targets', $iati-version)">
-         <me:feedback type="danger" class="iati" id="9.126.1">
-            <me:src ref="iati"
-                    versions="any"
-                    href="{me:iati-url('codelists/UNSDG-Targets/')}"/>
-            <me:message>The UNSDG target code is invalid.</me:message>
-            <me:diagnostic>For value {.}</me:diagnostic>
-         </me:feedback>
-      </xsl:if>
-      <xsl:next-match/>
-   </xsl:template>
-    <xsl:template match="//iati-activity/default-aid-type[@vocabulary = '2']/@code"
-                 mode="rules"
-                 priority="9.127">
-      <xsl:param name="iati-version" tunnel="yes"/>
-      <xsl:if test="me:codeListFail(., 'EarmarkingCategory', $iati-version)">
-         <me:feedback type="danger" class="iati" id="9.127.1">
-            <me:src ref="iati"
-                    versions="any"
-                    href="{me:iati-url('codelists/EarmarkingCategory/')}"/>
-            <me:message>The earmarking category code is invalid.</me:message>
-            <me:diagnostic>For value {.}</me:diagnostic>
-         </me:feedback>
-      </xsl:if>
-      <xsl:next-match/>
-   </xsl:template>
-    <xsl:template match="//iati-activity/default-aid-type[@vocabulary = '4']/@code"
-                 mode="rules"
-                 priority="9.128">
-      <xsl:param name="iati-version" tunnel="yes"/>
-      <xsl:if test="me:codeListFail(., 'CashandVoucherModalities', $iati-version)">
-         <me:feedback type="danger" class="iati" id="9.128.1">
-            <me:src ref="iati"
-                    versions="any"
-                    href="{me:iati-url('codelists/CashandVoucherModalities/')}"/>
-            <me:message>The cash and voucher modality code is invalid.</me:message>
-            <me:diagnostic>For value {.}</me:diagnostic>
-         </me:feedback>
-      </xsl:if>
-      <xsl:next-match/>
-   </xsl:template>
 </xsl:stylesheet>
