@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project name="IATI-Rules">
   
+  <property name="xspec.dir" value="tmp"/>
   <include file="lib/xspec/build.xml"/>
   
   <target name="update-codelist-rules" description="Update the codelist check rules based on the adapted IATI codelist mapping.">
